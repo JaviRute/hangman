@@ -27,6 +27,7 @@ function App() {
   const [showRules, setShowRules] = useState(false);
   function toggleSetShowRules() {
     setShowRules(!showRules)
+    
   }
 
   // Function to reset the game
@@ -37,6 +38,8 @@ function App() {
     setIncorrectGuesses(0);
     setGameOver(false);
     setWin(false);
+    console.log(`Psssst! The word is "${word}"`);
+    
   };
 
   // Function to check whether the user has won, using a for lopp
